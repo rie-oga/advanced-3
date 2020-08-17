@@ -30,7 +30,7 @@
 					<% end %>
 					<td><% if @book_find.favorited_by?(current_user) %>
   							<%= link_to book_favorites_path(@book_find), method: :delete do %>
-    						<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+    						<span class="glyphicon glyphicon-heart" aria-hidden="true" style="color: red;"></span>
     						<%= @book_find.favorites.count %>
   							<% end %>
 						<% else %>
